@@ -1,0 +1,13 @@
+<?
+$host="localhost";
+$user="saiyoid1_goth";
+$pw="saiyoid1";
+$dbname="saiyoid1_goth";
+$c=mysql_connect($host,$user,$pw);
+$res=mysql_query("SET NAMES utf8");
+
+if (!$c) {
+echo "ERROR : Can't connect database ";
+exit();
+}
+?>
