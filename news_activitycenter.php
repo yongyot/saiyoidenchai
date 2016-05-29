@@ -168,7 +168,7 @@
 	  
 	   <link rel="stylesheet" type="text/css" href="themes/css/Detail.css"/>
       <div class="well well-small  page_statice" style="text-align:left">
-      <h3>กิจกรรมศูนย์ฯ</h3>
+      <h3>ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบลไทรย้อย</h3>
       <ul class="media-list">
         <li class="media well well-small">
           <div class="media-body" >

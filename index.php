@@ -207,6 +207,8 @@
                     <!--//==============Activity===================//-->
                     <?
 
+
+
                  include "themes/php/connect/connect.php";
 					$sql9="select * from tb_news  where type_news='activity' order by id_news desc limit 6 "; 
      $result9=mysql_db_query($dbname,$sql9);
@@ -497,6 +499,90 @@ $num_rows = mysql_num_rows($result99);
             </ul>
           </div>
           
+          
+          
+          
+          
+           <div class="well well-small well_Custom multi_bg_box_botton"  style="position: relative;margin-top: 80px;">
+         <div class="logo"> <img src="themes/images/home/Logo_Center.png" />
+            <h4 class="hidden-xs hidden-md">ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบลไทรย้อย</h4></div>
+            <div class="container-fluid">
+            
+              <div class="row-fluid">
+
+
+
+ <div class="span12" style="margin-top: 60px;">
+                      <ul class="thumbnails">
+                      
+                      
+                            <?
+
+                 include "themes/php/connect/connect.php";
+					$sql9="select * from tb_news  where type_news='activitycenter' order by id_news desc limit 12 "; 
+     $result9=mysql_db_query($dbname,$sql9);
+
+        $i = 0;                          
+  while($record9=mysql_fetch_array($result9)) {
+  	$id_news=$record9[id_news];
+	$img_news=$record9[img_news];
+	$title_news=$record9[title_news];
+	$description_news=$record9[description_news];
+	
+	
+	echo "
+	
+	    <li class='span3'>
+                          <div class='thumbnail'> <img src='images/file/otop/$img_news' alt='$title_news'>
+                            <div class='caption' style='text-align:center'>
+                              <h5>$title_news</h5>
+                             <p style='text-align:center'>
+							 <a class='btn btn-mini' href='news_activitycenter.php?id=$id_news-$title_news'>» Read More</a>
+							 </p>
+                            </div>
+                          </div>
+         </li>
+	
+	";
+	
+	
+	
+  }
+	?>
+                      
+                     
+                      </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    
+     
+       <div class="footer"><a title="ดูทั้งหมด" href="view_all_activitycenter.php?type=activitycenter"  style="float: right;
+    margin-right: 10px;"> ดูทั้งหมด...</a></div>
+     
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           <!--body ผลิตภัณฑ์ ================================================ -->
           <div class="well well-small multi_bg_box_botton" id="Product"  >
             <div id="grids">
@@ -652,71 +738,7 @@ $num_rows = mysql_num_rows($result99);
             </div>
                      <div class="footer"><a title="ดูทั้งหมด" href="view_all_otop.php?type=acivity"  style="color: #fff;"> ดูทั้งหมด...</a></div>
           </div>
-          <div class="well well-small multi_bg_box_top" >
-            <h3>กิจกรรมศูนย์ฯ</h3>
-            <div class="container-fluid">
-              <div class="row-fluid">
-
-
-
- <div class="span12">
-                      <ul class="thumbnails">
-                      
-                      
-                            <?
-
-                 include "themes/php/connect/connect.php";
-					$sql9="select * from tb_news  where type_news='activitycenter' order by id_news desc limit 12 "; 
-     $result9=mysql_db_query($dbname,$sql9);
-
-        $i = 0;                          
-  while($record9=mysql_fetch_array($result9)) {
-  	$id_news=$record9[id_news];
-	$img_news=$record9[img_news];
-	$title_news=$record9[title_news];
-	$description_news=$record9[description_news];
-	
-	
-	echo "
-	
-	    <li class='span3'>
-                          <div class='thumbnail'> <img src='images/file/otop/$img_news' alt='$title_news'>
-                            <div class='caption' style='text-align:center'>
-                              <h5>$title_news</h5>
-                             <p style='text-align:center'>
-							 <a class='btn btn-mini' href='news_activitycenter.php?id=$id_news-$title_news'>» Read More</a>
-							 </p>
-                            </div>
-                          </div>
-         </li>
-	
-	";
-	
-	
-	
-  }
-	?>
-                      
-                     
-                      </ul>
-                    </div>
-
-
-
-
-
-
-
-
-
-                    
-     
-       <div class="footer"><a title="ดูทั้งหมด" href="view_all_activitycenter.php?type=activitycenter"  style="float: right;
-    margin-right: 10px;"> ดูทั้งหมด...</a></div>
-     
-              </div>
-            </div>
-          </div>
+         
           
           <!--body หน่วยงานที่เกี่ยวข้อง ================================================ -->
           <div class="well well-small multi_bg_box_top" >

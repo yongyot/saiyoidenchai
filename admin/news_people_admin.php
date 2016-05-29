@@ -301,7 +301,7 @@ mysql_close();
   <li><a href="news_otop_admin.php?mode=otop"><i class="icon-cog"></i>ผลิตภัณท์เด่นของตำบล</a></li>
     <li><a href="news_otop_admin.php?mode=travel"><i class="icon-cog"></i>สถานที่สำคัญ-แหล่งท่องเที่ยว</a></li>
       <li><a href="news_otop_admin.php?mode=tradition"><i class="icon-cog"></i>ศิลปวัฒนธรรมประเพณี</a></li>
- <li><a href="news_otop_admin.php?mode=activitycenter"><i class="icon-cog"></i>กิจกรรมศูนย์ฯ</a></li>
+ <li><a href="news_otop_admin.php?mode=activitycenter"><i class="icon-cog"></i>ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบลไทรย้อย</a></li>
 
 			  <li class="divider"></li>
 			  <li><a href="logout.php"><i class="icon-flag"></i> ออกจากระบบ</a></li>

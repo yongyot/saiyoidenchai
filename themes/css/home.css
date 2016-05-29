@@ -354,4 +354,21 @@ a:hover {
 #footerSection .comtaint.comtaint .comtaint_button {
 	padding-right: 50px;
 }
+#bodySection .well_Custom h4 {
+display:none;
+}
+}
+
+#bodySection .well_Custom h4 {
+	background: none;
+	border-bottom: none;
+    color: black;
+    text-shadow: none;
+	position: relative;
+       left: 210px;
+}
+#bodySection .well_Custom .logo img {
+    position: absolute;
+    left: 20px;
+    top: -70px;
 }

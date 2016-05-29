@@ -170,6 +170,17 @@
           <ul class="media-list">
             <li class="media well well-small">
               <div class="media-body"  style="text-align:center">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
                 <?
 
 include "themes/php/connect/connect.php";
@@ -208,25 +219,160 @@ $result9=mysql_db_query($dbname,$sql9);
   ";
   
   
-  echo"
-				  <center>";
-				 if($img_news!=''){ echo"	<a href='images/photo/$img_news' target='_blank'><img src='images/photo/$img_news' width='640' height='480' border='1' bordercolor='#0066CC'/></a></center>
+  echo" <center>";
+				 if($img_news!=''){ 
+				$extension = 'images/photo/'.$img_news;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+					 
+					 	 echo"	<a href='images/photo/$img_news' target='_blank'><img src='images/photo/$img_news' width='640' height='480' border='1' bordercolor='#0066CC'/></a></center>
 	<table width='100%' border='0' cellspacing='3' cellpadding='0' align='right'>
   <tr>
     <th scope='col' >
-					       ";}
-	if($img_news2!=''){ echo"	<a href='images/photo/$img_news2' target='_blank'><img src='images/photo/$img_news2' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
-					       ";}
-    if($img_news3!=''){ echo"	<a href='images/photo/$img_news3' target='_blank'><img src='images/photo/$img_news3' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
-					       ";}
-	if($img_news4!=''){ echo"	<a href='images/photo/$img_news4' target='_blank'><img src='images/photo/$img_news4' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
-					       ";}
-	if($img_news5!=''){ echo"	<a href='images/photo/$img_news5' target='_blank'><img src='images/photo/$img_news5' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
-					       ";}
-	if($img_news6!=''){ echo"	<a href='images/photo/$img_news6' target='_blank'><img src='images/photo/$img_news6' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
-					       ";}
-	if($img_news7!=''){ echo"	<a href='images/photo/$img_news7' target='_blank'><img src='images/photo/$img_news7' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
-					       ";}
+	
+	
+					       ";
+					 
+					 
+					 
+			     }else{
+					 
+					 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news' target='_blank'> $img_news </a></p>
+  <object data='images/photo/$img_news' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news'>
+                  </object>
+                <br />
+		   ";
+				 }
+				 
+			}
+			
+			
+	if($img_news2!=''){ 
+	
+	             $extension = 'images/photo/'.$img_news2;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+	
+	
+	echo"	<a href='images/photo/$img_news2' target='_blank'><img src='images/photo/$img_news2' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
+					       ";
+						   
+				 }else{
+					 								 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news2' target='_blank'>$img_news2 </a></p>
+  <object data='images/photo/$img_news2' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news2'>
+                  </object>
+                <br />
+		   ";
+					 
+					 
+					 }
+				 
+				 }
+    if($img_news3!=''){
+		
+		       $extension = 'images/photo/'.$img_news3;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+		
+		
+		 echo"	
+		<a href='images/photo/$img_news3' target='_blank'><img src='images/photo/$img_news3' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
+					       ";
+				 }
+				 
+				 else{
+					 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news3' target='_blank'>$img_news3 </a></p>
+  <object data='images/photo/$img_news3' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news3'>
+                  </object>
+                <br />
+		   ";
+					 
+					 
+					 }
+				 
+						   }
+	if($img_news4!=''){ 
+		       $extension = 'images/photo/'.$img_news4;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+	
+	echo"	<a href='images/photo/$img_news4' target='_blank'><img src='images/photo/$img_news4' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
+					       ";
+				 }else{
+					 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news4' target='_blank'>$img_news4 </a></p>
+  <object data='images/photo/$img_news4' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news4'>
+                  </object>
+                <br />
+		   ";
+					 
+					 
+					 }
+						   
+						   }
+	if($img_news5!=''){
+		       $extension = 'images/photo/'.$img_news5;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+		
+		 echo"	<a href='images/photo/$img_news5' target='_blank'><img src='images/photo/$img_news5' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
+					       ";
+				 }
+					else{
+					 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news5' target='_blank'>$img_news5 </a></p>
+  <object data='images/photo/$img_news5' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news5'>
+                  </object>
+                <br />
+		   ";
+					 
+					 
+					 }	   
+						   }
+	if($img_news6!=''){ 
+	
+	           $extension = 'images/photo/'.$img_news6;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+	
+	echo"	<a href='images/photo/$img_news6' target='_blank'><img src='images/photo/$img_news6' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
+					       ";
+				 }
+				 else{
+					 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news6' target='_blank'>$img_news6 </a></p>
+  <object data='images/photo/$img_news6' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news6'>
+                  </object>
+                <br />
+		   ";
+					 
+					 
+					 }
+						   }
+	if($img_news7!=''){ 
+	   $extension = 'images/photo/'.$img_news6;
+                $extension=substr($extension,strrpos($extension,'.')+1);
+				 if($extension != 'pdf'){
+	
+	
+	echo"	<a href='images/photo/$img_news7' target='_blank'><img src='images/photo/$img_news7' width='315' height='235' border='1' bordercolor='#0066CC'/></a>
+					       ";
+				 }
+						   
+						 else{
+					 	echo "
+	  <p align='left'> <img src='images/Paper-Clip-icon.png' width='35' height='35' />ไฟล์แนบ : <a href='images/photo/$img_news7' target='_blank'>$img_news7 </a></p>
+  <object data='images/photo/$img_news7' type='application/pdf' width='100%' height='740px' internalinstanceid='167' title='$img_news7'>
+                  </object>
+                <br />
+		   ";
+					 
+					 
+					 }	   
+						   }
 						   echo " &nbsp;</th>
   </tr>
 </table><br />";
@@ -287,7 +433,28 @@ $result9=mysql_db_query($dbname,$sql9);
 <script src="themes/js/bootstrap-popover.js"></script> 
 <script type="text/javascript" src="themes/lightbox/js/lightbox.js"></script> 
 <script src="themes/js/business_ltd_1.0.js"></script> 
-<!-- InstanceBeginEditable name="script" --><!-- InstanceEndEditable --> 
+<!-- InstanceBeginEditable name="script" -->
+
+<script type="text/javascript" src="themes/readpdf/pdfobject.js"></script> 
+<script type="text/javascript"> 
+/*<![CDATA[*/
+$(document).ready(function() {
+
+
+
+
+
+
+
+
+	
+	
+});
+
+
+/*]]>*/
+</script> 
+<!-- InstanceEndEditable --> 
 
 <!-- Themes switcher section ============================================================================================= -->
 <div id="secectionBox" >

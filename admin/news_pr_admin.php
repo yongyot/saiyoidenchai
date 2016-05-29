@@ -64,10 +64,14 @@ if ($fileupload) {
 	$array_last=explode(".",$fileupload_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload,"images/file/".$fileupload_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload,"../images/photo/".$fileupload_name);	
 	}
 	}
+
+	
+//echo $fileupload_name;	
+	
 	
 	
 //echo $fileupload_name;		
@@ -84,8 +88,8 @@ if ($fileupload2) {
 	$array_last=explode(".",$fileupload2_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload2,"../images/file/".$fileupload2_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload2,"../images/photo/".$fileupload2_name);	
 	}
 	}
 	
@@ -104,13 +108,14 @@ if ($fileupload3) {
 	$array_last=explode(".",$fileupload3_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload3,"../images/file/".$fileupload3_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload3,"../images/photo/".$fileupload3_name);	
 	}
 	}
 	
 	
-//echo $fileupload_name;			
+//echo $fileupload_name;	
+	
 	
 $fileupload4=$_FILES['fileupload4']['tmp_name'];
 $fileupload4_name=$_FILES['fileupload4']['name'];
@@ -123,8 +128,8 @@ if ($fileupload4) {
 	$array_last=explode(".",$fileupload4_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload4,"../images/file/".$fileupload4_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload4,"../images/photo/".$fileupload4_name);	
 	}
 	}
 	
@@ -143,8 +148,8 @@ if ($fileupload5) {
 	$array_last=explode(".",$fileupload5_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload5,"../images/file/".$fileupload5_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload5,"../images/photo/".$fileupload5_name);	
 	}
 	}
 	
@@ -163,8 +168,8 @@ if ($fileupload6) {
 	$array_last=explode(".",$fileupload6_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload6,"../images/file/".$fileupload6_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload6,"../images/photo/".$fileupload6_name);	
 	}
 	}
 	
@@ -183,51 +188,10 @@ if ($fileupload7) {
 	$array_last=explode(".",$fileupload7_name);
 	$c=count($array_last)-1; 
 	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload7,"../images/file/".$fileupload7_name);	
+	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt" or $lastname=="xlsx") {
+		copy($fileupload7,"../images/photo/".$fileupload7_name);	
 	}
 	}
-	
-			
-	
-	
-$fileupload6=$_FILES['fileupload6']['tmp_name'];
-$fileupload6_name=$_FILES['fileupload6']['name'];
-$fileupload6_size=$_FILES['fileupload6']['size'];
-$fileupload6_type=$_FILES['fileupload6']['type'];
-
-//echo $fileupload;
-
-if ($fileupload6) {
-	$array_last=explode(".",$fileupload6_name);
-	$c=count($array_last)-1; 
-	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload6,"../images/file/".$fileupload6_name);	
-	}
-	}
-	
-	
-//echo $fileupload_name;		
-	
-	
-$fileupload7=$_FILES['fileupload7']['tmp_name'];
-$fileupload7_name=$_FILES['fileupload7']['name'];
-$fileupload7_size=$_FILES['fileupload7']['size'];
-$fileupload7_type=$_FILES['fileupload7']['type'];
-
-//echo $fileupload;
-
-if ($fileupload7) {
-	$array_last=explode(".",$fileupload7_name);
-	$c=count($array_last)-1; 
-	$lastname=strtolower($array_last[$c]) ;
-	if ($lastname=="pdf" or $lastname=="doc" or $lastname=="txt"  or $lastname=="xls" or $lastname=="jpg" or $lastname=="jpeg" or $lastname=="zip" or $lastname=="rar" or $lastname=="ppt") {
-		copy($fileupload7,"../images/file/".$fileupload7_name);	
-	}
-	}
-	
-	
 //echo $fileupload_name;		
 if ($title_news!="" and $description_news!="") {
 
@@ -338,7 +302,7 @@ mysql_close();
   <li><a href="news_otop_admin.php?mode=otop"><i class="icon-cog"></i>ผลิตภัณท์เด่นของตำบล</a></li>
     <li><a href="news_otop_admin.php?mode=travel"><i class="icon-cog"></i>สถานที่สำคัญ-แหล่งท่องเที่ยว</a></li>
       <li><a href="news_otop_admin.php?mode=tradition"><i class="icon-cog"></i>ศิลปวัฒนธรรมประเพณี</a></li>
- <li><a href="news_otop_admin.php?mode=activitycenter"><i class="icon-cog"></i>กิจกรรมศูนย์ฯ</a></li>
+ <li><a href="news_otop_admin.php?mode=activitycenter"><i class="icon-cog"></i>ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบลไทรย้อย</a></li>
 
 			  <li class="divider"></li>
 			  <li><a href="logout.php"><i class="icon-flag"></i> ออกจากระบบ</a></li>
@@ -410,7 +374,7 @@ mysql_close();
                                   <tr>
                                     <td align="left" valign="top" class="body1">&nbsp;</td>
                                     <td align="left" valign="top" class="body1">&nbsp;</td>
-                                    <td align="left" valign="top" class="body1" style="color:#F00">รองรับไฟล์ .gif .jpg .jpeg .png เท่านั้น</td>
+                                    <td align="left" valign="top" class="body1" style="color:#F00">รองรับไฟล์ .pdf (ตั้งชื่อไฟล์ให้ติดกันเท่านั้น ห้ามมีช่องว่าง) .gif .jpg .jpeg .png เท่านั้น</td>
                                   </tr>
                                   <tr>
                                     <td align="left" valign="top" class="body1">&nbsp;</td>

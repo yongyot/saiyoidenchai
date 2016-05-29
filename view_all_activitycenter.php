@@ -167,7 +167,12 @@
       <div class="span9"> <!-- InstanceBeginEditable name="Content" -->
 	  
 	    <div class="well well-small  page_statice" style="text-align:left">
-          <h3>กิจกรรมศูนย์ฯ</h3>
+          <h3>ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบลไทรย้อย</h3>
+          
+           <div  style="text-align:center">
+ <img src="themes/images/home/Logo_Center.png" />
+ </div>
+          
           <ul class="media-list Detail_All">
             <li class="media well well-small">
               <div class="media-body" >

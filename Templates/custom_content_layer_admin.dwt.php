@@ -103,7 +103,7 @@
               <li><a href="../admin/news_activity_admin.php"><i class="icon-cog"></i> ข่าวกิจกรรม</a></li>
                <li><a href="../admin/news_pr_admin.php"><i class="icon-cog"></i> ข่าวประชาสัมพันธ์</a></li>
                 <li><a href="../admin/news_auction_admin.php"><i class="icon-cog"></i> ข่าวจัดซื้อจัดจ้าง</a></li>
-                 <li><a href="../admin/youtube_admin.php"><i class="icon-cog"></i> vdo youtube</a></li>
+                 <li style="display:none"><a href="../admin/youtube_admin.php"><i class="icon-cog"></i> vdo youtube</a></li>
                   <li><a href="../admin/dev_admin.php"><i class="icon-cog"></i> ยุทธศาสตร์การพัฒนา</a></li>
                  <li><a href="../admin/news_fund_admin.php"><i class="icon-cog"></i> กองทุนหลักประกันสุขภาพ</a></li>
                  
@@ -112,7 +112,7 @@
   <li><a href="../admin/news_otop_admin.php?mode=otop"><i class="icon-cog"></i>ผลิตภัณท์เด่นของตำบล</a></li>
     <li><a href="../admin/news_otop_admin.php?mode=travel"><i class="icon-cog"></i>สถานที่สำคัญ-แหล่งท่องเที่ยว</a></li>
       <li><a href="../admin/news_otop_admin.php?mode=tradition"><i class="icon-cog"></i>ศิลปวัฒนธรรมประเพณี</a></li>
-
+ <li><a href="../admin/news_otop_admin.php?mode=activitycenter"><i class="icon-cog"></i>ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบลไทรย้อย</a></li>
 
 			  <li class="divider"></li>
 			  <li><a href="../admin/logout.php"><i class="icon-flag"></i> ออกจากระบบ</a></li>
